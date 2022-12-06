@@ -28,7 +28,7 @@ for (int i = answer; i < c.Count() - 13; i++)
     }
 }
 
-Console.WriteLine((c[answer - 3]) + "," + (c[answer - 2]) + "," + (c[answer - 1]) + "," + (c[answer])); //Write Part 1 Characters
+Console.WriteLine((c[answer - 3]) + "," + (c[answer - 2]) + "," + (c[answer - 1]) + "," + (c[answer]));
 Console.WriteLine(answer + 1); //Part 1 Answer
 
 for (int i = 14; i > 0; i--)
