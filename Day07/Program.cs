@@ -50,20 +50,20 @@ foreach (string line in lines)
     }
 }
 
-int total = 0;
+int total1 = 0;
 
 foreach (var d in directories.Where(o => o.Size < 100000))
 {
-    total += d.Size;
+    total1 += d.Size;
 }
 
-Console.WriteLine("Part1:" + total);
+Console.WriteLine($"Part1: {total1} ");
 
 int available = 70000000 - directories.First(o => o.Path == "/").Size;
 
-int smallest = directories.Where(o => o.Size >= (30000000 - available)).Min(o => o.Size);
+int total2 = directories.Where(o => o.Size >= (30000000 - available)).Min(o => o.Size);
 
-Console.WriteLine("Part2:" + smallest);
+Console.WriteLine($"Part2: {total2}");
 
 class Dir
 {
